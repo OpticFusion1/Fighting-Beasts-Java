@@ -1,32 +1,28 @@
-package PreGame;
-
-import java.util.ArrayList;
+package sample;
 
 public class Character {
-    private static ArrayList charList = new ArrayList();
-
     String name;
-    int healthPoints;
-    int magicalPoints;
-    int level;
-    int strenght;
-    int luck;
-    int magic;
-    int physicalDefense;
-    int magicalDefense;
+    short healthPoints;
+    short magicalPoints;
+    short level;
+    short strenght;
+    short luck;
+    short magic;
+    short physicalDefense;
+    short magicalDefense;
 
 
 
-    public Character(String name, int strenght, int luck, int magic){
+    public Character(String name, short healthPoints, short magicalPoints, short level, short strenght, short luck, short magic, short physicalDefense, short magicalDefense){
         this.name = name;
-        this.healthPoints = strenght * 3;
-        this.magicalPoints = magic;
-        this.level = 1;
+        this.healthPoints = healthPoints;
+        this.magicalPoints = magicalPoints;
+        this.level = level;
         this.strenght = strenght;
         this.luck = luck;
         this.magic = magic;
-        this.physicalDefense = strenght * 2;
-        this.magicalDefense = magic * 2;
-        charList.add(this);
+        this.physicalDefense = physicalDefense;
+        this.magicalDefense = magicalDefense;
+
     }
 }
