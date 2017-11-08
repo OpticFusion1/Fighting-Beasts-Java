@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="248.0" prefWidth="393.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PreGame.Controller">
+   <children>
+      <Label layoutX="45.0" layoutY="14.0" text="CRIAÇÃO DE PERSONAGEM">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="49.0" mouseTransparent="true" prefHeight="52.0" prefWidth="297.0" text="Distribua 15 pontos nos atributos abaixo e esolha um nome para o seu personagem" textAlignment="CENTER" wrapText="true" />
+      <Label layoutX="67.0" layoutY="100.0" prefHeight="17.0" prefWidth="41.0" text="Nome" />
+      <Label layoutX="68.0" layoutY="127.0" prefHeight="17.0" prefWidth="41.0" text="Força" />
+      <Label layoutX="67.0" layoutY="151.0" prefHeight="17.0" prefWidth="41.0" text="Sorte" />
+      <Label layoutX="67.0" layoutY="178.0" prefHeight="17.0" prefWidth="41.0" text="Magia" />
+      <TextField fx:id="TxtName" layoutX="126.0" layoutY="97.0" prefHeight="25.0" prefWidth="160.0" />
+      <Slider fx:id="SldStrength" blockIncrement="1.0" layoutX="126.0" layoutY="129.0" max="15.0" prefHeight="0.0" prefWidth="160.0" value="5.0" />
+      <Slider fx:id="SldLuck" layoutX="126.0" layoutY="153.0" max="15.0" prefHeight="14.0" prefWidth="160.0" value="5.0" />
+      <Slider fx:id="SldMagic" layoutX="126.0" layoutY="180.0" max="15.0" prefHeight="14.0" prefWidth="160.0" value="5.0" />
+      <Label fx:id="LblStrength" layoutX="301.0" layoutY="128.0" text="5" />
+      <Label fx:id="LblLuck" layoutX="301.0" layoutY="152.0" text="5" />
+      <Label fx:id="LblMagic" layoutX="301.0" layoutY="179.0" text="5" />
+      <Button fx:id="BtnConfirm" layoutX="159.0" layoutY="209.0" mnemonicParsing="false" text="Confirmar" />
+   </children>
+</AnchorPane>
